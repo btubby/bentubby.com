@@ -8,16 +8,14 @@ class App extends Component {
     return (
       <div>
         <div id="container">
-          <p>
-            <a href="https://en.wikipedia.org/wiki/Red">Ben Tubby</a>
-          </p>
+          <p>Ben Tubby</p>
 
           {/* <p>
             <a href="https://en.wikipedia.org/wiki/Blue">Home</a>
           </p> */}
 
           <p>
-            <a href="https://en.wikipedia.org/wiki/Yellow">About</a>
+            <a href="#about">About</a>
           </p>
 
           <p>
@@ -37,6 +35,15 @@ class App extends Component {
           <header className="App-header">
             <img src={tubby} className="App-logo" alt="logo" />
           </header>
+        </div>
+        <div id="container">
+          <div className="about">
+            <a name="about">About</a>
+            <p>An experienced full stack developer based in the UK.</p>
+            <br />
+            Find me on
+            <a href="https://www.linkedin.com/in/bentubby/">LinkedIn</a>
+          </div>
         </div>
       </div>
     );
