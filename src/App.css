@@ -56,13 +56,6 @@ body {
     0 / 15px 15px;
 }
 
-#container {
-  width: 90%;
-  margin: auto;
-  height: 100vh;
-  padding-top: 4%;
-}
-
 /*Neon*/
 p {
   text-align: center;
@@ -75,12 +68,6 @@ a {
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   transition: all 0.5s;
-}
-
-.about {
-  font-size: 3em;
-  color: #fff;
-  font-family: Iceland;
 }
 
 p:nth-child(1) {
@@ -98,13 +85,20 @@ p:nth-child(1) a:hover {
   animation: none;
 }
 
-p:nth-child(2) a {
+.item {
+  text-align: center;
+  font-size: 4em;
+  margin: 15px 0 10px 0;
+}
+
+.about a {
   font-size: 1em;
-  color: #228dff;
+
+  color: #ff9900;
   font-family: Iceland;
 }
 
-p:nth-child(2) a:hover {
+.about a:hover {
   -webkit-animation: neon2 1.5s ease-in-out infinite alternate;
   -moz-animation: neon2 1.5s ease-in-out infinite alternate;
   animation: neon2 1.5s ease-in-out infinite alternate;
@@ -136,7 +130,7 @@ p:nth-child(4) a:hover {
 
 p:nth-child(5) a {
   font-size: 0.8em;
-  color: #ff9900;
+  color: #228dff;
   font-family: Audiowide;
 }
 
