@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
 import tubby from "./Assets/ThorbV3.svg";
 import "./App.css";
 
@@ -40,7 +39,9 @@ class App extends Component {
           </div>
 
           <p>
-            <a href="http://www.fairfx.com">Work</a>
+            <a target="_" href="http://www.fairfx.com">
+              Work
+            </a>
           </p>
 
           <p>
@@ -48,7 +49,9 @@ class App extends Component {
           </p>
 
           <p>
-            <a href="https://www.flickr.com/photos/tubby/">Photography</a>
+            <a target="_" href="https://www.flickr.com/photos/tubby/">
+              Photography
+            </a>
           </p>
         </Container>
 
@@ -64,19 +67,26 @@ class App extends Component {
             Hi, I'm an experienced full stack developer based in the UK.
             <br />I enjoy&nbsp;
             <span class="about">
-              <a href="https://www.flickr.com/photos/tubby/collections/72157600056784273">
+              <a
+                target="_"
+                href="https://www.flickr.com/photos/tubby/collections/72157600056784273"
+              >
                 travel
               </a>
             </span>
             . Sometimes I even&nbsp;
             <span class="about">
-              <a href="http://bentubby.blogspot.com/">write about it</a>
+              <a target="_" href="http://bentubby.blogspot.com/">
+                write about it
+              </a>
             </span>
             <br />
             <br />
             Find me on&nbsp;
             <span class="about">
-              <a href="https://www.linkedin.com/in/bentubby/">LinkedIn</a>
+              <a target="_" href="https://www.linkedin.com/in/bentubby/">
+                LinkedIn
+              </a>
             </span>
           </About>
         </Section>
