@@ -79,6 +79,7 @@ class App extends Component {
               <a target="_" href="http://bentubby.blogspot.com/">
                 write about it
               </a>
+              .
             </span>
             <br />
             <br />
@@ -87,6 +88,7 @@ class App extends Component {
               <a target="_" href="https://www.linkedin.com/in/bentubby/">
                 LinkedIn
               </a>
+              .
             </span>
           </About>
         </Section>
