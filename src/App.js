@@ -10,7 +10,11 @@ const Container = styled.div`
   width: 90%;
   margin: auto;
   height: 100vh;
-  padding-top: 4%;
+  padding-top: 6%;
+  @media (min-height: 1000px) {
+    padding-top: 35%;
+    font-size: 2vw;
+  }
 `;
 const Inner = styled.div`
 display: flex;
@@ -20,7 +24,6 @@ flex-direction: column;
     justify-content:space-between;
   }
 `;
-
 const Section = styled.div`
   width: 80%;
   margin: auto;
@@ -39,8 +42,30 @@ const About = styled.div`
   @media (max-width: 650px) {
     line-height: 1em;
   }
+  @media (min-height: 1500px) {
+    padding: 15%;
+    font-size: 5rem;
+  }
 `;
+const Button = styled.button`
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: red; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
 
+  // #myBtn:hover {
+  //   background-color: #555; /* Add a dark-grey background on hover */
+  // }
+`;
 class App extends Component {
   componentDidMount() {
     // When the user scrolls down 20px from the top of the document, show the button
@@ -67,12 +92,9 @@ class App extends Component {
 
   render() {
     return (
-      <div>
-        <div class="item name">Ben Tubby</div>
-        <button onClick={this.topFunction} id="myBtn" title="Go to top">
-          Top
-        </button>
+      <React.Fragment>
         <Container>
+          <div class="item name">Ben Tubby</div>
           <Inner>
             <div class="item about">
               <a href="#about">About</a>
@@ -141,7 +163,10 @@ class App extends Component {
             btubby@gmail.com
           </About>
         </Section>
-      </div>
+        <Button onClick={this.topFunction} id="myBtn" title="Go to top">
+          Top
+        </Button>
+      </React.Fragment>
     );
   }
 }
