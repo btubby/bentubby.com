@@ -1,3 +1,23 @@
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #222222; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
 .App {
   text-align: center;
 }
@@ -21,7 +41,9 @@
       rgba(255, 255, 255, 0.3),
       rgba(255, 255, 255, 0.3)
     ),
-    url("https://farm1.staticflickr.com/150/369440005_c35ff714ca_o.jpg");
+    /* url("https://farm1.staticflickr.com/150/369440005_c35ff714ca_o.jpg"); */
+      url("https://farm1.staticflickr.com/111/296313475_afde59e4d3_b.jpg");
+
   /* Full height */
   height: 100%;
 
@@ -69,8 +91,13 @@ a {
   -moz-transition: all 0.5s;
   transition: all 0.5s;
 }
+.item {
+  text-align: center;
+  font-size: 4em;
+  margin: 15px 0 10px 0;
+}
 
-p:nth-child(1) {
+.name {
   color: #fff;
   font-family: Monoton;
   -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
@@ -78,22 +105,15 @@ p:nth-child(1) {
   animation: neon1 1.5s ease-in-out infinite alternate;
 }
 
-p:nth-child(1) a:hover {
+.name a:hover {
   color: #ff1177;
   -webkit-animation: none;
   -moz-animation: none;
   animation: none;
 }
 
-.item {
-  text-align: center;
-  font-size: 4em;
-  margin: 15px 0 10px 0;
-}
-
 .about a {
   font-size: 1em;
-
   color: #ff9900;
   font-family: Iceland;
 }
@@ -104,37 +124,39 @@ p:nth-child(1) a:hover {
   animation: neon2 1.5s ease-in-out infinite alternate;
 }
 
-p:nth-child(3) a {
+.work a {
   font-size: 0.7em;
   color: #ffdd1b;
   font-family: Pacifico;
 }
 
-p:nth-child(3) a:hover {
+.work a:hover {
   -webkit-animation: neon3 1.5s ease-in-out infinite alternate;
   -moz-animation: neon3 1.5s ease-in-out infinite alternate;
   animation: neon3 1.5s ease-in-out infinite alternate;
 }
 
-p:nth-child(4) a {
+.contact a {
   color: #b6ff00;
   font-family: "Press Start 2P";
-  font-size: 0.5em;
+  font-size: 0.9em;
+  color: #ba01ff;
+  font-family: Vampiro One;
 }
 
-p:nth-child(4) a:hover {
+.contact a:hover {
   -webkit-animation: neon4 1.5s ease-in-out infinite alternate;
   -moz-animation: neon4 1.5s ease-in-out infinite alternate;
   animation: neon4 1.5s ease-in-out infinite alternate;
 }
 
-p:nth-child(5) a {
+.photography a {
   font-size: 0.8em;
   color: #228dff;
   font-family: Audiowide;
 }
 
-p:nth-child(5) a:hover {
+.photography a:hover {
   -webkit-animation: neon5 1.5s ease-in-out infinite alternate;
   -moz-animation: neon5 1.5s ease-in-out infinite alternate;
   animation: neon5 1.5s ease-in-out infinite alternate;
@@ -363,5 +385,15 @@ p a:hover {
   }
   p {
     font-size: 3.5em;
+  }
+}
+@media (max-height: 450px) {
+  .item {
+    padding-left: 5px;
+  }
+}
+@media (min-width: 1000px) {
+  .item {
+    font-size: 6em;
   }
 }
