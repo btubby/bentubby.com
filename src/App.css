@@ -74,7 +74,7 @@ a {
 .item {
   text-align: center;
   font-size: 4em;
-  margin: 15px 0 10px 0;
+  margin: 10px;
 }
 
 .name {
@@ -379,6 +379,6 @@ p a:hover {
 }
 @media (min-width: 1000px) {
   .item {
-    font-size: 6em;
+    font-size: 5em;
   }
 }

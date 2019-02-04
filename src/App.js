@@ -10,7 +10,7 @@ const Container = styled.div`
   width: 90%;
   margin: auto;
   height: 100vh;
-  padding-top: 6%;
+  padding: 6% 0 6% 0;
   @media (min-height: 1000px) {
     padding-top: 35%;
     font-size: 2vw;
@@ -19,10 +19,10 @@ const Container = styled.div`
 const Inner = styled.div`
 display: flex;
 flex-direction: column;
-  @media (max-height: 450px) {
-   flex-direction:row
-    justify-content:space-between;
-  }
+@media (max-height: 450px) {
+  flex-direction:row
+  justify-content:space-between;
+}
 `;
 const Section = styled.div`
   width: 80%;
