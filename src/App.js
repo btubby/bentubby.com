@@ -55,7 +55,7 @@ const Button = styled.button`
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
-  background-color: red; /* Set a background color */
+  background-color: #ba02ff; /* Set a background color */
   color: white; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
   padding: 15px; /* Some padding */
@@ -68,6 +68,7 @@ const Button = styled.button`
 `;
 class App extends Component {
   componentDidMount() {
+    this.scrollFunction();
     // When the user scrolls down 20px from the top of the document, show the button
     window.onscroll = () => {
       this.scrollFunction();
@@ -75,13 +76,15 @@ class App extends Component {
   }
 
   scrollFunction = () => {
+    console.log(document.body.scrollTop, document.documentElement.scrollTop);
+    document.getElementById("myBtnTop").style.display = "none";
+    document.getElementById("myBtnDown").style.display = "block";
     if (
       document.body.scrollTop > 20 ||
       document.documentElement.scrollTop > 20
     ) {
-      document.getElementById("myBtn").style.display = "block";
-    } else {
-      document.getElementById("myBtn").style.display = "none";
+      document.getElementById("myBtnTop").style.display = "block";
+      document.getElementById("myBtnDown").style.display = "none";
     }
   };
   // When the user clicks on the button, scroll to the top of the document
@@ -163,8 +166,11 @@ class App extends Component {
             btubby@gmail.com
           </About>
         </Section>
-        <Button onClick={this.topFunction} id="myBtn" title="Go to top">
-          Top
+        <Button onClick={this.topFunction} id="myBtnTop" title="Go to top">
+          ☝️
+        </Button>
+        <Button onClick={this.topFunction} id="myBtnDown" title="Go to top">
+          👇
         </Button>
       </React.Fragment>
     );
