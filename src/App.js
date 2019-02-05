@@ -144,6 +144,13 @@ class App extends Component {
               <a target="_" href="http://bentubby.blogspot.com/">
                 write about it
               </a>
+              . <br />I like{" "}
+              <a
+                target="_"
+                href="https://www.google.com/search?q=vegemite&rlz=1C5CHFA_enGB822GB822&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjgyJSe9KTgAhVhRBUIHdWmAwgQ_AUIDygC&biw=1680&bih=940"
+              >
+                Vegemite
+              </a>
               .
             </span>
             <br />
