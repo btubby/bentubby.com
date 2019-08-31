@@ -110,7 +110,7 @@ class App extends Component {
           </Inner>
           <Inner>
             <div class="item work">
-              <a target="_" href="http://www.fairfx.com">
+              <a target="_" href="http://www.equals.co">
                 Work
               </a>
             </div>
@@ -129,7 +129,9 @@ class App extends Component {
         <Section>
           <a name="about" />
           <About>
-            Hi, I'm an experienced full stack developer based in the UK.
+            Hi, I'm an experienced full stack developer
+            <br />
+            I am based in the UK.
             <br />I enjoy&nbsp;
             <span class="about">
               <a
