@@ -4,6 +4,32 @@ import "./App.css";
 
 import styled from "styled-components";
 
+const Project = styled.div`
+  width 90%;
+  // border: 1px solid;
+  font-size: 1.5rem;
+  line-height:1.3;
+  font-color: #f1f1f3;
+  margin-bottom:30px;
+  padding:5px;
+
+  &:hover, &:active, &:focus {
+    color: #15181C;
+    background-color: #ba02ff;
+    outline: 0px;
+}
+
+`;
+const ProjectTitle = styled.div`
+  font-weight: bold;
+  background-color:'grey';
+`;
+
+const ProjectLink = styled.div`
+  font-size: 0.9em;
+  
+`;
+
 const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -110,9 +136,7 @@ class App extends Component {
           </Inner>
           <Inner>
             <div class="item work">
-              <a target="_" href="http://www.equals.co">
-                Work
-              </a>
+            <a href="#projects">Projects</a>
             </div>
             <div class="item contact">
               <a href="#contact">Contact</a>
@@ -175,6 +199,84 @@ class App extends Component {
             btubby@gmail.com
           </About>
         </Section>
+
+        <Section>
+          <About>
+            <a name="projects" />
+            <br />
+            PROJECTS
+            <br />
+
+            <Project>
+              <ProjectTitle>
+               💳 Equals Go Multicurrency Card
+              </ProjectTitle>
+              The first customer facing product to launch after our rebrand.
+              <br/>
+              I worked on the web app, built with react.
+              
+              <ProjectLink>
+              <div class=" work">
+                <a target="_" href="http://www.equals.co">www.equals.co</a>
+              </div>
+              </ProjectLink>
+            </Project>
+            
+            <Project>
+              <ProjectTitle>
+                Equals Design Library
+              </ProjectTitle>
+              Our first design system.  Tokens, styles and widgets used across our sites.
+              <br/>
+              <ProjectLink>
+              <div class=" work">
+                <a target="_" href="https://fuji.fairfx.io">fuji.fairfx.io</a>
+                </div>
+              </ProjectLink>
+            </Project>
+
+            <Project>
+              <ProjectTitle>
+                FairFX
+              </ProjectTitle>
+              I have contributed lots to this large Perl codebase.   Frontend, backend and API layers 
+              <br/>
+              <ProjectLink>
+              <div class=" work">
+                <a target="_" href="http://www.fairfx.com">www.fairfx.com</a>
+                </div>
+              </ProjectLink>
+            </Project>
+             
+            <Project>
+              <ProjectTitle>
+              🥁 Ten Tonne Ska
+              </ProjectTitle>
+              "The best Ska and Reggae band in SE26"
+              <br/>
+              <ProjectLink>
+              <div class=" work">
+                <a target="_" href="http://www.tentonneska.com">www.tentonneska.com</a>
+                </div>
+              </ProjectLink>
+            </Project>
+          
+            <Project>
+               <ProjectTitle>
+               🎨 Tubby Creative
+              </ProjectTitle>
+              Flickr powered portfolio site I built for my brother.
+              <ProjectLink>
+              <div class=" work">
+                <a target="_" href="http://www.tubbycreative.com/">www.tubbycreative.com</a>
+                </div>
+              </ProjectLink>
+            </Project>
+          </About>
+        </Section>
+      
+
+
         <Button onClick={this.topFunction} id="myBtnTop" title="Go to top">
           ☝️
         </Button>
