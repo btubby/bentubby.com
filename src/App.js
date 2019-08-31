@@ -58,7 +58,8 @@ const Section = styled.div`
   font-size: 1rem;
 `;
 const About = styled.div`
-  font-size: 3em;
+padding-top:30px;
+  font-size: 2em;
   color: #fff;
   font-family: Iceland;
   line-height: 2em;
@@ -153,10 +154,11 @@ class App extends Component {
         <Section>
           <a name="about" />
           <About>
-            Hi, I'm an experienced full stack developer
-            <br />
+            👋🏻 Hi, I'm an experienced full stack developer
+            <p/>
             I am based in the UK.
-            <br />I enjoy&nbsp;
+            <p/>
+            I enjoy&nbsp;
             <span class="about">
               <a
                 target="_"
@@ -170,7 +172,8 @@ class App extends Component {
               <a target="_" href="http://bentubby.blogspot.com/">
                 write about it
               </a>
-              . <br />I like{" "}
+              . <p />
+              I like{" "}
               <a
                 target="_"
                 href="https://www.google.com/search?q=vegemite&rlz=1C5CHFA_enGB822GB822&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjgyJSe9KTgAhVhRBUIHdWmAwgQ_AUIDygC&biw=1680&bih=940"
@@ -179,7 +182,7 @@ class App extends Component {
               </a>
               .
             </span>
-            <br />
+            <p/>
             Find me on&nbsp;
             <span class="about">
               <a target="_" href="https://www.linkedin.com/in/bentubby/">
