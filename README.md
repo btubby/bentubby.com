@@ -1,5 +1,9 @@
-Deplyment URL: https://tubby-24c3e.firebaseapp.com/
+# Personal Website
 
-# TODO
+https://tubby-24c3e.firebaseapp.com/
+
+http://www.bentubby.com
+
+## TODO
 
 - make nicer :)
