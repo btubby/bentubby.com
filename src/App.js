@@ -152,9 +152,8 @@ class App extends Component {
         </div>
 
         <Section>
-          <a name="about" />
           <About>
-            👋🏻 Hi, I'm an experienced full stack developer
+            Hi, I'm an experienced full stack developer
             <p/>
             I am based in the UK.
             <p/>
@@ -195,7 +194,6 @@ class App extends Component {
 
         <Section>
           <About>
-            <a name="contact" />
             <br />
             07982613944
             <br />
@@ -205,14 +203,13 @@ class App extends Component {
 
         <Section>
           <About>
-            <a name="projects" />
             <br />
             PROJECTS
             <br />
 
             <Project>
               <ProjectTitle>
-               💳 Equals Go Multicurrency Card
+               Equals Go Multicurrency Card
               </ProjectTitle>
               The first customer facing product to launch after our rebrand.
               <br/>
@@ -253,7 +250,7 @@ class App extends Component {
              
             <Project>
               <ProjectTitle>
-              🥁 Ten Tonne Ska
+              Ten Tonne Ska
               </ProjectTitle>
               "The best Ska and Reggae band in SE26"
               <br/>
@@ -266,7 +263,7 @@ class App extends Component {
           
             <Project>
                <ProjectTitle>
-               🎨 Tubby Creative
+               Tubby Creative
               </ProjectTitle>
               Flickr powered portfolio site I built for my brother.
               <ProjectLink>
@@ -281,10 +278,10 @@ class App extends Component {
 
 
         <Button onClick={this.topFunction} id="myBtnTop" title="Go to top">
-          ☝️
+          up
         </Button>
         <Button onClick={this.topFunction} id="myBtnDown" title="Go to top">
-          👇
+          down
         </Button>
       </React.Fragment>
     );
